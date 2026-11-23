@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-23",
+  "purpose": "Final runtime package integrity snapshot",
+  "note": "Operating procedure unchanged after behavioral trials; source provenance subsequently expanded to record six inspected author code files.",
+  "files": [
+    {
+      "path": "technical-architect/SKILL.md",
+      "sha256": "cdd43f5de3d82808fdbef2e617ac56f867951dc029c2de7680f134e38cf805ae"
+    },
+    {
+      "path": "technical-architect/agents/openai.yaml",
+      "sha256": "9d0bdcb7d530e9b610086953981a8a6c367721e4714f7140022f5edd9ccdc756"
+    },
+    {
+      "path": "technical-architect/assets/adr.md",
+      "sha256": "2ac3e3b75002eefa51e319c1b70f379748cccca2c8e4af9b8713d9b8ef6ba76c"
+    },
+    {
+      "path": "technical-architect/assets/architecture-brief.md",
+      "sha256": "ac0618b1e50a0729ad4f633697a577d28a2fab96fa873e2fb143ef19e67e804d"
+    },
+    {
+      "path": "technical-architect/assets/implementation-plan.md",
+      "sha256": "079181f9d33eb8d97a4df32218a7bea374d60133b47a378f4df7687c4691ba29"
+    },
+    {
+      "path": "technical-architect/assets/option-matrix.example.json",
+      "sha256": "4408b7f037e5f823394c5f6ebd6344c68c8ae7be6f6315810c864946af96d917"
+    },
+    {
+      "path": "technical-architect/assets/review-report.md",
+      "sha256": "7e771bb153229a33ce50b3c5184d88ced45afa43fa0aebc7e44509b5fbf4e504"
+    },
+    {
+      "path": "technical-architect/references/ai-systems.md",
+      "sha256": "7aee7de022768065b8ea4a09c1c08c5a8ae17b2623026e63d2e0601f075418ab"
+    },
+    {
+      "path": "technical-architect/references/architecture-styles.md",
+      "sha256": "71dbe0c16031e717889d245dd2258d79df86769ae5cf6f9cef33bd949e147f1f"
+    },
+    {
+      "path": "technical-architect/references/architecture-workflow.md",
+      "sha256": "38f6e3e20ae3f29bd49074e1e5c2900cef0e2fdd5044dbb611a4046164878437"
+    },
+    {
+      "path": "technical-architect/references/data-and-reliability.md",
+      "sha256": "058baf28ec86c4d66ed8104eacce1be9f63da8adc2845eb335128a55eef2c703"
+    },
+    {
+      "path": "technical-architect/references/pattern-selection.md",
+      "sha256": "8882d5170b9d7cc1ea531a0e398fb7db70c297bdada500ba9d531f84382960db"
+    },
+    {
+      "path": "technical-architect/references/review-playbook.md",
+      "sha256": "feabe6125a8cc0a15df09a63e7c21ad268cc2ac50b6b01cacfdab5034f5d59b5"
+    },
+    {
+      "path": "technical-architect/references/source-manifest.json",
+      "sha256": "3c19a2f488307fe2222b88072fdecc55c58dc47ab9ecca60e088e0425a8f5ab7"
+    },
+    {
+      "path": "technical-architect/references/sources.md",
+      "sha256": "269ce223a64c8541037dece21d77b66f512a4af636c9c55a42ab949860373ab6"
+    },
+    {
+      "path": "technical-architect/scripts/evaluate_options.py",
+      "sha256": "73d8fbf40922a6f04bb29e87114a364d26743a168183ce8c2667cdb2ff55435e"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Architect"
+  short_description: "Design and review architecture with explicit tradeoffs"
+  default_prompt: "Use $technical-architect to assess this system, compare feasible designs, and produce a justified architecture and implementation plan."

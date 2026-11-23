@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "criteria": [
+    {
+      "id": "delivery",
+      "description": "Hypothetical preference: ease of delivery by a two-person team",
+      "weight": 3
+    },
+    {
+      "id": "independent-scaling",
+      "description": "Hypothetical preference: ability to scale one workload separately",
+      "weight": 1
+    }
+  ],
+  "constraints": [
+    {
+      "id": "operating-budget",
+      "description": "Hypothetical fixed operating-cost ceiling; replace with an agreed amount and estimate"
+    }
+  ],
+  "options": [
+    {
+      "id": "modular-monolith",
+      "scores": {
+        "delivery": {
+          "score": 4,
+          "evidence": "Illustrative judgment only: the fictional team already operates this deployment model."
+        },
+        "independent-scaling": {
+          "score": 2,
+          "evidence": "Illustrative judgment only: application modules share a deployment unit."
+        }
+      },
+      "constraints": {
+        "operating-budget": {
+          "status": "pass",
+          "evidence": "Fictional example assumes an estimate was checked; this is not evidence for any real project."
+        }
+      },
+      "assumptions": [
+        "All scores, weights and gate outcomes in this example are hypothetical."
+      ]
+    },
+    {
+      "id": "separate-services",
+      "scores": {
+        "delivery": {
+          "score": 2,
+          "evidence": "Illustrative judgment only: additional deployment and monitoring work is expected."
+        },
+        "independent-scaling": {
+          "score": 5,
+          "evidence": "Illustrative judgment only: independently deployed workloads can have different resource limits."
+        }
+      },
+      "constraints": {
+        "operating-budget": {
+          "status": "unknown",
+          "evidence": "Fictional example has no cost estimate for the additional infrastructure."
+        }
+      },
+      "assumptions": [
+        "Independent deployment would be feasible; no implementation or load test has verified it."
+      ]
+    }
+  ]
+}

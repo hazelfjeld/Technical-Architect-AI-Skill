@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-11-23",
+  "skill_name": "technical-architect",
+  "complete_books_read": false,
+  "model_training_performed": false,
+  "guidance_origin": "Original engineering synthesis informed by limited public official book materials. Architecture workflows, style comparisons, pattern procedures, reliability and AI guidance, templates, scripts, and examples are not full-book extractions.",
+  "books": [
+    {
+      "book_id": "HFSA",
+      "title": "Head First Software Architecture: A Learner's Guide to Architectural Thinking",
+      "authors": ["Raju Gandhi", "Mark Richards", "Neal Ford"],
+      "publisher": "O'Reilly Media",
+      "edition": 1,
+      "publisher_release_month": "2024-03",
+      "publisher_online_isbn": "9781098134341",
+      "complete_book_retrieved": false,
+      "complete_book_read": false,
+      "book_content_bundled": false,
+      "sources": [
+        {
+          "source_id": "HFSA-PUBLISHER",
+          "url": "https://www.oreilly.com/library/view/head-first-software/9781098134341/",
+          "source_type": "publisher",
+          "access_status": "public_metadata_and_contents_inspected",
+          "inspected_sections": ["Book metadata", "Public table of contents"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFSA-COPYRIGHT",
+          "url": "https://www.oreilly.com/library/view/head-first-software/9781098134341/copyright-page01.html",
+          "source_type": "publisher",
+          "access_status": "public_preview_inspected",
+          "inspected_sections": ["Copyright-page metadata", "Printing history", "Publisher resources"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFSA-AUTHOR-PAGE",
+          "url": "https://www.thoughtworks.com/en-us/insights/books/head-first-software-architecture",
+          "source_type": "coauthor_affiliated_organization",
+          "access_status": "public_page_inspected",
+          "inspected_sections": ["Book description", "Authors", "Authorized free-chapter link"]
+        },
+        {
+          "source_id": "HFSA-EXCERPT",
+          "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/books/head-first-software-architecture_excerpt.pdf",
+          "source_type": "authorized_publisher_book_excerpt",
+          "access_status": "complete_excerpt_downloaded_partially_read",
+          "inspected_sections": ["Chapter 1 core narrative, printed pages 1-27", "Selected exercises and solutions"],
+          "full_source_text_read": false,
+          "retrieved_artifact": {
+            "filename": "head-first-software-architecture_excerpt.pdf",
+            "bytes": 7550396,
+            "sha256": "b05747010875a68cdee8707d801b403e5008552c1ed0de56746587fd5d157f2c",
+            "pdf_pages": 40,
+            "content_scope": "Cover and Chapter 1, printed pages 1-39",
+            "included_in_skill": false
+          }
+        },
+        {
+          "source_id": "HFSA-PREVIEW-02",
+          "url": "https://www.oreilly.com/library/view/head-first-software/9781098134341/ch02.html",
+          "source_type": "publisher",
+          "access_status": "public_chapter_preview_inspected",
+          "inspected_sections": ["Chapter 2 opening preview and topic list"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFSA-PREVIEW-03",
+          "url": "https://www.oreilly.com/library/view/head-first-software/9781098134341/ch03.html",
+          "source_type": "publisher",
+          "access_status": "public_chapter_preview_inspected",
+          "inspected_sections": ["Chapter 3 opening preview and topic list"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFSA-PREVIEW-04",
+          "url": "https://www.oreilly.com/library/view/head-first-software/9781098134341/ch04.html",
+          "source_type": "publisher",
+          "access_status": "public_chapter_preview_inspected",
+          "inspected_sections": ["Chapter 4 opening preview and topic list"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFSA-BOOKCLUB",
+          "url": "https://www.developertoarchitect.com/bookclub-podcast-hfsa.html",
+          "source_type": "coauthor",
+          "access_status": "public_episode_descriptions_inspected",
+          "inspected_sections": ["Episode descriptions"],
+          "audio_listened_or_transcribed": false
+        }
+      ]
+    },
+    {
+      "book_id": "HFDP",
+      "title": "Head First Design Patterns, 2nd Edition",
+      "authors": ["Eric Freeman", "Elisabeth Robson"],
+      "publisher": "O'Reilly Media",
+      "edition": 2,
+      "publisher_release_month": "2020-12",
+      "publisher_online_isbn": "9781492077992",
+      "complete_book_retrieved": false,
+      "complete_book_read": false,
+      "book_content_bundled": false,
+      "sources": [
+        {
+          "source_id": "HFDP-PUBLISHER",
+          "url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/",
+          "source_type": "publisher",
+          "access_status": "public_metadata_and_contents_inspected",
+          "inspected_sections": ["Book metadata", "Public table of contents"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFDP-TOC",
+          "url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/preface02.html",
+          "source_type": "publisher",
+          "access_status": "public_contents_preview_inspected",
+          "inspected_sections": ["Contents preview"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFDP-INTRO",
+          "url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/preface03.html",
+          "source_type": "publisher",
+          "access_status": "public_intro_preview_read",
+          "inspected_sections": ["Public introductory excerpt"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFDP-PREVIEW-01",
+          "url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/ch01.html",
+          "source_type": "publisher",
+          "access_status": "search_returned_public_excerpt_read",
+          "inspected_sections": ["Search-returned Chapter 1 excerpt"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFDP-PREVIEW-13",
+          "url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/ch13.html",
+          "source_type": "publisher",
+          "access_status": "public_chapter_preview_read",
+          "inspected_sections": ["Chapter 13 opening excerpt"],
+          "full_source_text_read": false
+        },
+        {
+          "source_id": "HFDP-AUTHOR-PAGE",
+          "url": "https://wickedlysmart.com/head-first-design-patterns/",
+          "source_type": "authors",
+          "access_status": "public_resource_page_inspected",
+          "inspected_sections": ["Book resources", "Official example repository link"]
+        },
+        {
+          "source_id": "HFDP-CODE",
+          "url": "https://github.com/bethrobson/Head-First-Design-Patterns",
+          "source_type": "author_repository",
+          "access_status": "readme_listing_and_six_implementation_files_inspected",
+          "inspected_sections": ["README", "Repository listing", "Six complete Java implementation files"],
+          "implementation_files_analyzed": true,
+          "inspected_commit_sha": "c8b5e9631485463bb6442f2a471c26fcf2525291",
+          "inspected_files": [
+            {"path": "src/headfirst/designpatterns/strategy/Duck.java", "blob_sha": "85352010e131fe2232b6dbdc8218e6d44229d708", "complete_file_read": true},
+            {"path": "src/headfirst/designpatterns/observer/weather/WeatherData.java", "blob_sha": "f29184607637ee94a6713566ab6e367c2fdbe628", "complete_file_read": true},
+            {"path": "src/headfirst/designpatterns/state/gumballstate/GumballMachine.java", "blob_sha": "9650c29b2bbdeacb709ea6fd1925ab8f04b2217b", "complete_file_read": true},
+            {"path": "src/headfirst/designpatterns/state/gumballstate/NoQuarterState.java", "blob_sha": "d8c889b2e0a3db7fe597d7038bc1e33655086c0c", "complete_file_read": true},
+            {"path": "src/headfirst/designpatterns/adapter/ducks/TurkeyAdapter.java", "blob_sha": "600cf13089eac3222d30400d628be146177b2d9d", "complete_file_read": true},
+            {"path": "src/headfirst/designpatterns/decorator/starbuzz/Mocha.java", "blob_sha": "1df34ae6fa545efa652c3cb9b298b0997445adfa", "complete_file_read": true}
+          ],
+          "inspection_scope": "Bounded structural reading of six files across Strategy, Observer, State, Adapter, and Decorator. No execution, complete-repository review, or book-text retrieval.",
+          "code_vendored": false
+        },
+        {
+          "source_id": "HFDP-ERRATA",
+          "url": "https://www.oreilly.com/catalog/errata.csp?isbn=0636920367598",
+          "source_type": "publisher",
+          "access_status": "public_errata_page_inspected",
+          "inspected_sections": ["Confirmed errata"]
+        }
+      ]
+    }
+  ],
+  "handling_policy": {
+    "public_repository_inclusions": ["Original guidance", "Bibliographic metadata", "Official source links", "Access-scope records"],
+    "exclude_from_public_repository": ["Book files", "Extracted book text", "Book scans or screenshots", "Private annotations", "Private project data", "Credentials"],
+    "additional_authorized_reading": "Record edition, section or page, access scope, and retrieval date after actual inspection. Do not infer complete-book reading from partial access.",
+    "current_product_claims": "Verify changing versions, security properties, APIs, and service guarantees in current primary documentation."
+  }
+}
