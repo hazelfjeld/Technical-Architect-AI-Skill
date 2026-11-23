@@ -1,6 +1,6 @@
 ---
 name: technical-architect
-description: Design, review, and evolve software architecture using explicit requirements, quality scenarios, tradeoffs, boundaries, and justified design patterns. Use for system design, architecture reviews, ADRs, monolith versus microservices decisions, refactoring plans, API and data ownership design, reliability analysis, and translating architecture into implementation work. Includes original procedures informed by official public materials for Head First Software Architecture and Head First Design Patterns, second edition.
+description: Design, review, and evolve software architecture using explicit requirements, quality scenarios, tradeoffs, boundaries, and justified design patterns. Use for system design, architecture reviews, ADRs, monolith versus microservices decisions, refactoring plans, API and data ownership design, reliability analysis, and translating architecture into implementation work. Includes original procedures informed by inspected materials from Head First Software Architecture and Head First Design Patterns, second edition.
 ---
 
 # Technical Architect
@@ -62,6 +62,7 @@ Produce a design that a team can build, operate, and change. Start with actual c
 
 - Choose system boundaries independently from class patterns. A Strategy or Factory does not solve service ownership; an event listener does not establish durable messaging.
 - Before adding a pattern, state the observed pressure, stable contract, variation point, simpler alternative, and introduced cost.
+- Check the whole behavioral contract across the abstraction: state ownership, effects, errors, access checks, callback timing, and concurrent use where relevant. Consult the concrete probes in [Pattern selection](references/pattern-selection.md).
 - Prefer idiomatic functions, data structures, modules, and injected dependencies where adequate. Do not force Java class structures into other languages.
 - Show a small original example or concrete code change when useful. Preserve behavior with targeted tests and name a condition for removing the abstraction.
 

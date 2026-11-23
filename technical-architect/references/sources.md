@@ -4,9 +4,9 @@ Use this guide when attributing advice, checking book coverage, or incorporating
 
 ## What this skill is based on
 
-The two Head First books provide the requested subject anchors. Public publisher metadata, contents, selected previews, and author resources were inspected. An authorized Software Architecture excerpt was also downloaded for research. **Neither complete book was obtained or read.** This skill is not a model-training run, a full-book extraction, or a substitute copy of either book.
+The two Head First books provide the requested subject anchors. **Software Architecture remains partially inspected:** official metadata, previews, author resources, and an authorized Chapter 1 excerpt. **The complete Design Patterns, second edition PDF was subsequently retrieved from a user-supplied URL:** all extracted pages were read, including every chapter and the appendix, with selected visual checks. The exact scope appears below. This skill is a reusable workflow; no model training was performed.
 
-The skill's architecture workflow, style comparisons, pattern-selection procedures, reliability checks, AI-system guidance, templates, scripts, and examples are **original engineering synthesis**. They must not be attributed to unseen book chapters. Book topic lists indicate scope; they do not establish that detailed techniques or example implementations were studied.
+The skill's architecture workflow, style comparisons, pattern-selection procedures, reliability checks, AI-system guidance, templates, scripts, and examples are **original engineering synthesis**. They must not be attributed to unseen material. The repository contains no book files, extracted book text, screenshots, copied publisher examples, or chapter-by-chapter reconstruction.
 
 ## Head First Software Architecture
 
@@ -31,20 +31,40 @@ The downloaded excerpt contains **7,550,396 bytes**. Its SHA-256 is `b0574701087
 
 **Eric Freeman and Elisabeth Robson. O'Reilly Media, second edition, December 2020.** Publisher-listed online ISBN: `9781492077992`.
 
-The public contents identify Strategy, Observer, Decorator, Factory Method, Abstract Factory, Singleton, Command, Adapter, Facade, Template Method, Iterator, Composite, State, Proxy, compound patterns, and practical pattern use. The introductory preview describes Java examples and assumes object-oriented programming knowledge; its subject is object design rather than enterprise architecture patterns. The chapter 13 preview connects patterns with recurring contexts, constrained problems, and reusable designs. The authors link an official example repository. Its README, listing, and six representative Java implementation files were inspected; no code was copied into this skill.
+The reviewed material connects pattern applicability to change, client contracts, and design consequences. Its instructional examples require separate production analysis. The additional behavioral probes in [pattern-selection.md](pattern-selection.md#probe-the-behavioral-contract) are original engineering procedures prompted by this review, rather than copied exercises or claims about the authors' production recommendations.
 
-| Source ID | Official source | Access and inspection |
+| Source ID | Source | Access and inspection |
 | --- | --- | --- |
-| HFDP-PUBLISHER | [Publisher book page](https://www.oreilly.com/library/view/head-first-design/9781492077992/) | Bibliography and public contents inspected; complete book not accessed. |
+| HFDP-PUBLISHER | [Publisher book page](https://www.oreilly.com/library/view/head-first-design/9781492077992/) | Bibliography and public contents inspected. Full publisher-hosted text was not accessed; the supplied PDF is recorded separately below. |
 | HFDP-TOC | [Publisher contents preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/preface02.html) | Public contents preview inspected. |
-| HFDP-INTRO | [Introduction preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/preface03.html) | Public introductory preview read; complete introduction not retrieved. |
-| HFDP-PREVIEW-01 | [Chapter 1 preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/ch01.html) | Search-returned public excerpt read; full chapter not retrieved. |
-| HFDP-PREVIEW-13 | [Chapter 13 preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/ch13.html) | Public excerpt read; complete chapter not retrieved. |
+| HFDP-INTRO | [Introduction preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/preface03.html) | Initial public excerpt inspected; subsequent complete extracted introduction text is covered by HFDP-SUPPLIED-PDF. |
+| HFDP-PREVIEW-01 | [Chapter 1 preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/ch01.html) | Initial search-returned excerpt inspected; subsequent chapter text is covered by HFDP-SUPPLIED-PDF. |
+| HFDP-PREVIEW-13 | [Chapter 13 preview](https://www.oreilly.com/library/view/head-first-design/9781492077992/ch13.html) | Initial public excerpt inspected; subsequent chapter text is covered by HFDP-SUPPLIED-PDF. |
 | HFDP-AUTHOR-PAGE | [Authors' resource page](https://wickedlysmart.com/head-first-design-patterns/) | Resource page and link to official code repository inspected. |
 | HFDP-CODE | [Authors' example repository](https://github.com/bethrobson/Head-First-Design-Patterns) | README, listing, and six complete Java files across Strategy, Observer, State, Adapter, and Decorator inspected at commit `c8b5e9631485463bb6442f2a471c26fcf2525291`. Exact paths and blob identifiers are in the source manifest. Code was not executed or vendored; this was not a complete-repository review. |
 | HFDP-ERRATA | [Publisher errata](https://www.oreilly.com/catalog/errata.csp?isbn=0636920367598) | Confirmed-errata page inspected. Recheck entries relevant to a precise book claim. |
+| HFDP-SUPPLIED-PDF | User-supplied external PDF; [official book identity](https://www.oreilly.com/library/view/head-first-design/9781492077992/) | Complete 672-page PDF retrieved. All extracted pages read sequentially across four readers; 13 rendered pages visually checked. The PDF and mirror URL are not republished. |
 
 **Bounded code observations (HFDP-CODE):** Strategy delegates operations to replaceable behavior objects. Observer stores listeners and calls their updates synchronously. The inspected State context delegates events; a concrete state changes that context's active state. Adapter translates operations and adjusts invocation count. Decorator combines a wrapped object's description and cost with its own contribution. These observations describe only the six inspected files and establish no concurrency, persistence, or distributed-delivery guarantees.
+
+### Supplied PDF coverage
+
+The cover and copyright page identify the second edition, December 2020, with PDF ISBN `9781492078005`; the publisher's online identifier above is a different format identifier. The research artifact contains **49,899,830 bytes** and has SHA-256 `4a97711f4533c45bd25c37a21de3d2f6e7dfcf11f801ebd78ef693f4d2bde484`. Its external host's distribution authorization was not verified.
+
+| Inspected scope | PDF pages | Printed body pages | Method |
+| --- | --- | --- | --- |
+| Front matter and index/end matter | 1-38 and 655-672 | Preliminary pages and 617 onward | All extracted text read |
+| Chapters 1-4 | 39-206 | 1-168 | All extracted text read |
+| Chapters 5-9 | 207-418 | 169-380 | All extracted text read |
+| Chapters 10-13 and Appendix 14 | 419-654 | 381-616 | All extracted text read |
+
+The extraction contains 159,606 whitespace-delimited words. Visual checks covered PDF pages **1, 8, 34, 35, 60, 128, 194, 226, 274, 400, 442, 507, and 564**. Pages 2, 116, 354, 600, and 654 contained no extracted text. Extraction can lose diagram relationships, spatial ordering, checkbox state, and puzzle layouts. The remaining pages were not visually audited. Exercise prompts and supplied solutions were read, but exercises were not independently completed and publisher code was not executed.
+
+The manifest therefore records complete PDF retrieval and complete extracted-text review, while retaining `complete_book_read: false` under its conservative definition requiring every page's visual content to be reviewed. Do not turn this bounded review into a claim of exhaustive visual study or demonstrated expertise.
+
+## Different title supplied alongside Design Patterns
+
+The first supplied PDF is **[Head First Software Development](https://www.oreilly.com/library/view/head-first-software/9780596527358/)** by Dan Pilone and Russ Miles, ISBN `9780596527358`, with 477 PDF pages. Its cover, copyright page, and summary contents were checked. Its chapter narrative was not reviewed, and it was not substituted for **Head First Software Architecture**. The architecture book's complete-text access remains unresolved.
 
 ## Using additional authorized material
 

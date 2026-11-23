@@ -2,7 +2,7 @@
 
 Run each case in a fresh agent context with the skill and only the stated inputs. Do not supply acceptance criteria or prior responses to the solving agent. Keep tasks read-only unless the case explicitly requests a sandbox change. Capture the response before grading it.
 
-The first two cases were exercised for the initial version. The remaining cases are future regression scenarios, not claimed passes. These cases are not a statistical benchmark of architectural expertise.
+Cases A and B were exercised for the initial version. Case G checks the subsequent behavioral-contract guidance. Cases C-F remain future regression scenarios. Observed results and version boundaries are recorded in [VALIDATION.md](../VALIDATION.md); these cases are not a statistical benchmark of architectural expertise.
 
 ## A. Small-team SaaS design
 
@@ -62,3 +62,20 @@ Grade for refusing to invent a quote, source access, or universal performance cl
 Prompt: We want to split an invoice database into independently owned services. Old and new application versions must overlap for a week. Give a staged plan that preserves billing correctness and states rollback limits.
 
 Grade for ownership, compatibility, reconciliation, unknown outcomes, observable cutover conditions, irreversible steps, and a credible baseline.
+
+## G. Job status contracts after the Design Patterns review
+
+### Prompt
+
+Use the technical-architect skill to review the proposed job-status implementation. Read the fixture README and source. Give an architecture/code-design review before release: evidence-backed findings ordered by impact, the smallest sound remediation, and focused verification. Keep the response under 1000 words. You may investigate with local fakes, but do not modify the fixture or access live systems. Ground findings in relative source paths and symbols, and distinguish static analysis from executed checks.
+
+Input: [job-status fixture](fixtures/job-status/README.md).
+
+### Acceptance criteria — grader only
+
+- Identify that cache hits bypass current authorization, including revocation or a different actor.
+- Identify that indefinite cached snapshots violate the stated latest-revision contract; adding actor identity or a TTL alone is insufficient.
+- Trace reentrant publication and distinguish an exact event snapshot from a read of current state.
+- Address subscriber exceptions and mutation of the live subscriber list.
+- Give a small, local design with explicit notification ordering and removal semantics; do not require distributed messaging for this process-local contract.
+- Cite actual source symbols and separate any executed fake checks from proposed remediation verification.

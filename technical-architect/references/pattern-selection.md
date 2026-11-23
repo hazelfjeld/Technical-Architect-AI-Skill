@@ -10,7 +10,7 @@ Demonstrate one current behavior and one realistic change. Keep a plain function
 
 ## Select by the problem
 
-These are general software-design heuristics, not quotations or book summaries. The first table uses the core pattern names visible in the public publisher contents.
+These are general software-design heuristics, not quotations or book summaries. Source coverage and inspection limits are recorded separately in [sources.md](sources.md).
 
 | Pattern | Pressure that may justify it | Simpler alternative and caution |
 |---|---|---|
@@ -31,7 +31,7 @@ These are general software-design heuristics, not quotations or book summaries. 
 
 ## Broaden the search only if needed
 
-These additional conventional patterns do not imply that their full book treatment was read.
+Consider these additional conventional patterns only when the observed problem calls for them.
 
 | Pattern | Consider for | Main burden |
 |---|---|---|
@@ -56,6 +56,19 @@ These additional conventional patterns do not imply that their full book treatme
 ## Preserve system semantics
 
 An Observer does not create durable delivery. A Command does not create a reliable queue. A Singleton does not deduplicate work across replicas. A Proxy does not make network calls local. A State object does not persist a recoverable workflow. Design data and failures explicitly at these boundaries.
+
+## Probe the behavioral contract
+
+Apply relevant probes to actual callers and state. These are original engineering review steps; they are not guarantees supplied by a pattern name.
+
+- **Notifications:** Choose event snapshots or reads of current state. Trace a reentrant update, a failing subscriber, and listener removal; check versions and delivery order.
+- **Wrappers:** Trace writes and reads through the outer object. Check state forwarding, inner-object escape, cache freshness, authorization on cache hits, and ordering of effects.
+- **Shared instances:** Separate identity and lifetime from safe initialization, concurrent mutation, and disposal. Establish each property independently.
+- **Commands:** Give each execution its own captured state and result. Exercise repeated invocation and partial failure; distinguish exact restoration from compensation.
+- **State:** Map events to guards, effects, next states, and invalid outcomes. Name transition ownership; verify rejected events produce no forbidden effects.
+- **Factories:** Probe a new family and a new product category. Record affected contracts and how family compatibility is enforced.
+- **Composites:** Identify operations common to all nodes and branch-only capabilities. Choose explicit unsupported operations or narrower interfaces deliberately.
+- **Composed designs:** Assign input handling, domain invariants, reads, and notifications to owners. Trace independent update paths; justify each added pattern.
 
 ## Prove the abstraction helps
 

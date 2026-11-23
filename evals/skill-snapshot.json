@@ -1,11 +1,11 @@
 {
   "date": "2026-11-23",
-  "purpose": "Final runtime package integrity snapshot",
-  "note": "Operating procedure unchanged after behavioral trials; source provenance subsequently expanded to record six inspected author code files.",
+  "purpose": "Runtime package integrity snapshot after Design Patterns extracted-text review",
+  "note": "The main procedure and pattern reference gained behavioral-contract probes. Trials A and B apply to initial-skill-snapshot.json; case G exercises this updated runtime. The option evaluator and its tests are unchanged.",
   "files": [
     {
       "path": "technical-architect/SKILL.md",
-      "sha256": "cdd43f5de3d82808fdbef2e617ac56f867951dc029c2de7680f134e38cf805ae"
+      "sha256": "74cea6d21400b09166cf9b8fe048a84651d5d8f6da74b317d480620625bbcbf8"
     },
     {
       "path": "technical-architect/agents/openai.yaml",
@@ -49,7 +49,7 @@
     },
     {
       "path": "technical-architect/references/pattern-selection.md",
-      "sha256": "8882d5170b9d7cc1ea531a0e398fb7db70c297bdada500ba9d531f84382960db"
+      "sha256": "4d2b003673c9a2f02bd30e200634027978097e8736fec7a5bcaf274629313f69"
     },
     {
       "path": "technical-architect/references/review-playbook.md",
@@ -57,11 +57,11 @@
     },
     {
       "path": "technical-architect/references/source-manifest.json",
-      "sha256": "3c19a2f488307fe2222b88072fdecc55c58dc47ab9ecca60e088e0425a8f5ab7"
+      "sha256": "89a1034df576eec5a27496581ceeaacdf9a3b2c871c11e30c36b3800416fb7d6"
     },
     {
       "path": "technical-architect/references/sources.md",
-      "sha256": "269ce223a64c8541037dece21d77b66f512a4af636c9c55a42ab949860373ab6"
+      "sha256": "552a9dc416065545be2648f901eeb83445420bf9d9032a70fd38fae4a7084308"
     },
     {
       "path": "technical-architect/scripts/evaluate_options.py",

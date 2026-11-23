@@ -6,14 +6,14 @@ An installable skill for designing, reviewing, and evolving software systems. It
 
 ## Book foundation and coverage
 
-This project uses official public materials associated with the requested books:
+This project records the actual reading scope for each requested book:
 
 | Book | Edition | Material actually available to this build |
 |---|---|---|
 | [Head First Software Architecture](https://www.oreilly.com/library/view/head-first-software/9781098134341/) | First, 2024 | Publisher contents/previews and an authorized Chapter 1 excerpt |
-| [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/9781492077992/) | Second, 2020 | Publisher contents/previews, author resources, and six inspected Java example files |
+| [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/9781492077992/) | Second, 2020 | Complete supplied 672-page PDF retrieved; all extracted text reviewed across every chapter and appendix, with 13 selected pages visually checked; official previews and six author-code files also inspected |
 
-**Neither complete book was retrieved or read.** The skill contains original engineering guidance and brief source notes. It does not include book files, copied examples, or a chapter-by-chapter reconstruction. It is a reusable workflow, not a model-training run or a guarantee of expertise.
+**Software Architecture still has partial coverage. Design Patterns now has complete extracted-text coverage, with selective visual inspection.** The supplied PDF titled *Head First Software Development* is a different book and was not substituted for *Head First Software Architecture*. The skill contains original engineering guidance and concise source notes. It does not include book files, copied examples, or a chapter-by-chapter reconstruction. No model training was performed, and the evaluations do not establish general expert-level performance.
 
 See the [source guide](technical-architect/references/sources.md) and [machine-readable source record](technical-architect/references/source-manifest.json) for exact reading boundaries. The [authorized free architecture chapter](https://www.thoughtworks.com/content/dam/thoughtworks/documents/books/head-first-software-architecture_excerpt.pdf) remains on its official host. The [Design Patterns authors' code](https://github.com/bethrobson/Head-First-Design-Patterns) is linked for study and is not vendored.
 
@@ -24,11 +24,12 @@ See the [source guide](technical-architect/references/sources.md) and [machine-r
 - Compares the current/simple baseline with credible alternatives.
 - Separates module boundaries, deployment boundaries, and trust boundaries.
 - Selects design patterns using concrete change pressure and simpler alternatives.
+- Checks whether wrappers, callbacks, shared state, and composed objects preserve their callers' behavioral contracts.
 - Analyzes data ownership, partial failure, retries, duplicate effects, and recovery.
 - Produces architecture briefs, decision records, review findings, and implementation slices.
 - Applies an optional extension to model serving, retrieval, and agent applications.
 
-The pattern decision aid covers 23 conventional patterns, with warnings about inappropriate use. The style guide includes layered systems, modular monoliths, plugins, services, events, and complementary structures. These are original decision aids, not claims of full-book extraction.
+The pattern decision aid covers 23 conventional patterns and includes concrete probes for notification snapshots, cache access checks, instance lifetime, invocation history, transitions, factory extension, and tree capabilities. The style guide includes layered systems, modular monoliths, plugins, services, events, and complementary structures. These are original operational decision aids.
 
 ## Use the skill
 
